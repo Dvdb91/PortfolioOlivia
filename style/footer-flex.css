@@ -73,14 +73,18 @@
 }
 
 .footer-main-text {
-    color: #A8CCE5;
-    font-size: 4.5rem;
+    display: block;
+    color: white;
+    font-size: 4rem;
     text-align: center;
     font-family: 'EB Garamond', serif;
     font-weight: 900;
     font-stretch: expanded;
 }
 
+.footer-main-text span {
+    display: block;
+}
 /* ----- project titles on the bottom ----- */
 
 .footer-project-titles-container {

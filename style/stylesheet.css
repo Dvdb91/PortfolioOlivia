@@ -28,12 +28,12 @@ font-size: 13px;
 .fonts-text {
 font-family: 'EB Garamond', serif;
 font-weight: 900;
-font-size: 1.2em;
+font-size: 1.5em;
 }
 
 .fonts-caption {
     font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.6;
     word-spacing: 0.1em;
     font-size: 13px;
@@ -71,7 +71,7 @@ font-size: 1.2em;
 
 .home-nav {
     /* padding-top: 6rem; */
-    padding-left: 1.7rem;
+    padding-left: 3rem;
 }
 
 .project {
@@ -156,6 +156,8 @@ img {
     padding-top: 25px;
     padding-bottom: 10em;
 }
+
+
 
 .video-gymber {
     display: block;
