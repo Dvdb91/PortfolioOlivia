@@ -4,13 +4,21 @@
     padding: 0;
     
 }
+ h1 {
+     margin: 0;
+ }
 
-.footer-wrapper {
+.innerwrapper {
     width: 100%;
     height: 100vh;
     position: fixed;
     bottom: 0;
     z-index: 1;
+    margin: 0;
+}
+
+.footer-wrapper {
+    height: 100%;
 }
 
 .everything-but-footer {
@@ -24,11 +32,16 @@
 
 .navigation-footer {
     display: flex;
-    justify-content: flex-end;
-    width: 95%;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
-    height: 12%;
+    /* height: 12%; */
     margin: 0 auto;
+    padding-left: 35px;
+    padding-bottom: 25px;
+    padding-right: 35px;        
+    padding-top: 25px;
+
 }
 
 .subtitle {
@@ -39,12 +52,15 @@
     line-height: 1.6;
     letter-spacing: 0.2em;
     font-size: 0.8rem;
-}
+    /* padding-left: 35px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-top: 20px;*/
+} 
 
 .navigation-footer a {
     text-decoration: none;
     text-transform: uppercase;
-    padding-top: 1rem;
 }
 
 .fonts-title-olivia {
@@ -62,7 +78,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 74%;
+    height: calc(100% - 153px);
+    /* height: -webkit-calc(100% - 10px); */
     width: 100%;
     background-image: url('../images/homepageimage.jpg');
     background-position: center;
@@ -90,11 +107,15 @@
 .footer-project-titles-container {
     display: flex;
     justify-content: space-between;
-    width: 95%;
+    width: 95%; 
     margin: 0 auto;
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
-}
+    padding-top: 25px;
+    padding-bottom: 25px;
+} 
+
+/* .whitespace {
+    height: 32px;
+} */
 
 
 .lists li {
@@ -140,7 +161,17 @@
     display: none;
 }
 
+
+
+
+
+
+
 @media (max-width: 1200px ) {
+
+    .footer-main-text-container {
+        height: calc(100vh - 180px);
+    }
 
     #first-screensize {
         display: none;
@@ -163,7 +194,15 @@
     }
 }
 
-@media (max-width: 900px ) {
+@media (max-width: 950px ) {
+
+    .footer-main-text {
+        font-size: 3rem;
+    }
+
+    .footer-main-text-container {
+        height: calc(100vh - 200px);
+    }
 
     
     #first-screensize {
@@ -187,10 +226,27 @@
     }
 }
 
-@media (max-width: 650px ) {
+@media (max-width: 700px ) {
 
     .footer-main-text-container {
-        height: 60%;
+        height: calc(100vh - 234px);
+    }
+
+    .navigation-footer {
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .navigation a {
+        padding-top: 16px;
+    }
+
+    .subtitle {
+        line-height: 1;
     }
 
     .footer-project-titles-container {
@@ -199,7 +255,7 @@
 
     }
     .footer-main-text {
-        font-size: 2em;
+        font-size: 2.5rem;
     }
     
     #first-screensize {
@@ -223,30 +279,30 @@
     }
 }
 
-@media (max-width: 400px ) {
-
-    .navigation {
+@media (max-width: 600px ) {
+/* 
+    .navigation-footer {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: flex-start;
-    }
+    } */
 
     .lists li {
         font-size: 0.7em;        
     }
 
     .footer-main-text-container {
-        height: 60%;
+        height: calc(100vh - 216px);
     }
 
-    .footer-project-titles-container {
+    /* .footer-project-titles-container {
         display: flex;
         justify-content: space-around;
 
-    }
+    } */
     .footer-main-text {
-        font-size: 2em;
+        font-size: 2rem;
     }
     
     #first-screensize {
@@ -268,4 +324,51 @@
     #fifth-screensize {
         display: none;
     }
+}
+
+@media (max-width: 480px ) {
+    .footer-main-text {
+        font-size: 1.5rem;
+    }
+
+    .footer-main-text-container {
+        height: calc(100vh - 219px);
+    }
+}
+
+@media (max-width: 350px ) {
+    .footer-main-text {
+        font-size: 1rem;
+    }
+
+    .navigation a {
+        padding-top: 8px;
+    }
+
+    .footer-main-text-container {
+        height: calc(100vh - 164px);
+    }
+
+    .lists li {
+        font-size: 0.5em;        
+    }
+
+    .navigation-footer {
+        padding-bottom: 16px;
+        padding-top: 16px;
+    
+    }
+
+    .subtitle {
+        font-size: 0.65rem;
+    } 
+
+    .fonts-title-olivia {
+        font-size: 0.65rem;
+    }
+
+    /* .footer-project-titles-container {
+        padding-top: 2.25rem;
+        padding-bottom: 30px;
+    }*/
 }

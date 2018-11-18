@@ -5,6 +5,7 @@
 body {
     margin: 0 auto;
     padding: 0;
+    height: 100%;
 
 }
 
@@ -33,9 +34,8 @@ font-size: 1.5em;
 
 .fonts-caption {
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
     line-height: 1.6;
-    word-spacing: 0.1em;
+    /* word-spacing: 0.1em; */
     font-size: 13px;
     color: grey;
     }
@@ -65,13 +65,13 @@ font-size: 1.5em;
     text-transform: uppercase;
     color: #000;
     position: fixed;
-    padding-top: 2.8em;
+    padding-top: 25px;
     z-index: 500;
 }
 
 .home-nav {
     /* padding-top: 6rem; */
-    padding-left: 3rem;
+    padding-left: 35px;
 }
 
 .project {
@@ -150,12 +150,25 @@ img {
 }
 
 .description {
-    width:40%;
-    margin: 0 auto;
+    width:100%;
+    margin-left: "20px";
+    margin-right: "20px";
     text-align: center;
     padding-top: 25px;
     padding-bottom: 10em;
 }
+
+/* .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 10em;
+} */
 
 
 
@@ -166,7 +179,14 @@ img {
 }
 /* ---- media queries ----- */
 
-@media (max-width: 600px) {
+
+@media (max-width: 750px) {
+    .fonts-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 650px) {
     .project-presentation {
         display: block;
         width: 100%;
@@ -183,16 +203,38 @@ img {
         width: 100%;
     }
 
-    .fonts-text {
-        font-size: 18px;
-    }
+
+
+    .fonts-caption {
+        font-family: 'Lato', sans-serif;
+        /* line-height: 1.6; */
+        /* word-spacing: 0.1em; */
+        font-size: 11px;
+        color: grey;
+        }
 }
 
 
 @media (max-width: 900px) {
         .description {
-            width: 80%;
+            width: 100%;
         }
 }
 
+@media (max-width: 450px) {
+    .fonts-caption {
+        font-size: 8px;
+        }
+}
 
+@media (max-width: 550px) {
+    .fonts-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .fonts-text {
+        font-size: 10px;
+    }
+}
