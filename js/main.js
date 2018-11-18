@@ -11,12 +11,23 @@ $(document).ready(function() {
           $('.wrapper').stop().fadeIn("fast");
     
         } else if (newscroll > mypos) {
-            $('#oliviaS').stop().fadeOut("fast");
+            $('#titleAppear').stop().fadeOut("fast");
             $('.wrapper').stop().fadeOut("fast");
     
         } else if(newscroll < mypos) {
-            $('#oliviaS').stop().fadeIn("fast");
-        }
+            $('#titleAppear').stop().fadeIn("fast");
+        // } else if ($(document).height() <= ($(window).height() + $(window).scrollTop())) {
+        //     $('#titleAppear').css("display","block");
+        //     $('#titleAppear').css("opacity","1");
+         }
         mypos = newscroll;
     });
+
+    // $(window).scroll(function() {
+    //     if ($(document).height() <= ($(window).height() + $(window).scrollTop())) {
+    //         $('#titleAppear').css("display","block");
+    //         $('#titleAppear').css("opacity","1");
+    //     }
+    // });
 });
+
